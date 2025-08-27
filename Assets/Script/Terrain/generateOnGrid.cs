@@ -6,21 +6,25 @@ using static UnityEditor.PlayerSettings;
 
 public class generateOnGrid : MonoBehaviour
 {
-
+    [Header("Grid Attributes")]
     [SerializeField] private int _gridSize;
     [SerializeField] private List<GameObject> _tiles = new List<GameObject>();
     [SerializeField] private int _seed;
     private Grid _grid;
     private Vector3 _position = Vector3.zero;
     private Quaternion _rotation = Quaternion.Euler(-90,0,0);
+    private double _crashSite;
+    private double _targetPoint;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
         if (_seed == 0)
         {
             _seed = 1;
         }
-
 
         _grid = GetComponent<Grid>();
 
@@ -30,7 +34,7 @@ public class generateOnGrid : MonoBehaviour
             for (int posZ = 0; posZ < _gridSize; posZ++)
             {
                 _position.z = posZ * _grid.cellSize.z;
-                Instantiate(_tiles[0], _position, _rotation);
+                Instantiate(_tiles[0], _position, _rotation, transform);
             }
 
 

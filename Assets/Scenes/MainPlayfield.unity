@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b560cb74ce0aff4c97fb3c911f618ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gridSize: 14
+  _gridSize: 10
   _tiles:
   - {fileID: 1929395997214293382, guid: 3d68fe0700ae3434dbc196d225662904, type: 3}
   _seed: 0
