@@ -179,6 +179,7 @@ MonoBehaviour:
   _gridSize: 10
   _tiles:
   - {fileID: 1929395997214293382, guid: 3d68fe0700ae3434dbc196d225662904, type: 3}
+  - {fileID: 1929395997214293382, guid: ab59bdbfc16a5da42bd225b864285636, type: 3}
   _seed: 0
 --- !u!1 &645854642
 GameObject:
